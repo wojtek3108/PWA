@@ -1,0 +1,17 @@
+{
+    "name": "Pogodynka",
+    "short_name": "Pogodynka",
+    "theme_color": "#31ef59",
+    "background_color": "#d5ffe8",
+    "display": "browser",
+    "orientation": "portrait",
+    "scope": "/",
+    "start_url": "/PWA/",
+    "icons": [
+        {
+            "src": "logo.png",
+            "sizes": "512x512",
+            "type": ".image/png"
+        }
+    ]
+}
