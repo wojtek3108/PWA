@@ -9,9 +9,9 @@
     "start_url": "/PWA/",
     "icons": [
         {
-            "src": "logo.png",
+            "src": "./logo.png",
             "sizes": "512x512",
-            "type": ".image/png"
+            "type": "image/png"
         }
     ]
 }
