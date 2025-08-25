@@ -6,7 +6,7 @@
     "display": "browser",
     "orientation": "portrait",
     "scope": "/",
-    "start_url": "/PWA/",
+    "start_url": "./",
     "icons": [
         {
             "src": "./logo.png",

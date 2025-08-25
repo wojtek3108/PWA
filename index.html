@@ -13,40 +13,70 @@
 <body>
     <header>
         <h1>aplikacja pogodowa</h1>
+        <nav class="main-nav">
+            <button class="nav-btn active" data-section="weather">Pogoda</button>
+            <button class="nav-btn" data-section="login">Logowanie</button>
+        </nav>
     </header>
     <main>
-        <section class="search">
-            <input type="text" placeholder="podaj nazwę miasta">
-            <button>Sprawdź pogodę!</button>
-            <p class="error_message"></p>
-        </section>
-        <section class="weather_top">
-            <h2 class="city_name"></h2>
-            <div>
-                <img src="" alt="" class="weather_img">
-                <p class="temp"></p>
+        <section id="weather-section" class="content-section active">
+            <div class="search">
+                <input type="text" placeholder="podaj nazwę miasta">
+                <button>Sprawdź pogodę!</button>
+                <p class="error_message"></p>
             </div>
-            <p class="description"></p>
-        </section>
-        <section class="weather_bottom">
-            <p>Temperatura odczuwalna: <span class="feels_like"></span></p>
-            <p>Ciśnienie powietrza: <span class="pressure"></span><span class=""></span></p>
-            <p>Wilgotność: <span class="humidity"></span></p>
-            <p>Prędkość wiatru: <span class="wind_speed"></span></p>
-            <p>Zachmurzenie: <span class="clouds"></span></p>
-            <p>Widoczność: <span class="visibility"></span></p>
-        </section>
-        <section>
-
-            <h3>Zanieczyszczenie powietrza</h3>
+            <div class="weather_top">
+                <h2 class="city_name"></h2>
+                <div>
+                    <img src="" alt="" class="weather_img">
+                    <p class="temp"></p>
+                </div>
+                <p class="description"></p>
+            </div>
+            <div class="weather_bottom">
+                <p>Temperatura odczuwalna: <span class="feels_like"></span></p>
+                <p>Ciśnienie powietrza: <span class="pressure"></span></p>
+                <p>Wilgotność: <span class="humidity"></span></p>
+                <p>Prędkość wiatru: <span class="wind_speed"></span></p>
+                <p>Zachmurzenie: <span class="clouds"></span></p>
+                <p>Widoczność: <span class="visibility"></span></p>
+            </div>
             <div>
-                <img src="./pm25.png" alt="" class="pollution_img">
-                <span class="pollution_value"></span>
-                <span>&micro;g/m<sup>3</sup></span>
+                <h3>Zanieczyszczenie powietrza</h3>
+                <div>
+                    <img src="./pm25.png" alt="" class="pollution_img">
+                    <span class="pollution_value"></span>
+                    <span>&micro;g/m<sup>3</sup></span>
+                </div>
             </div>
         </section>
 
-
+        <section id="login-section" class="content-section">
+            <h2>Logowanie / Rejestracja</h2>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="username">Nazwa użytkownika:</label>
+                    <input type="text" id="username" required>
+                    <span class="error-msg" id="username-error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required>
+                    <span class="error-msg" id="email-error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="password">Hasło:</label>
+                    <input type="password" id="password" required>
+                    <span class="error-msg" id="password-error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password">Potwierdź hasło:</label>
+                    <input type="password" id="confirm-password" required>
+                    <span class="error-msg" id="confirm-error"></span>
+                </div>
+                <button type="submit">Zarejestruj</button>
+            </form>
+        </section>
     </main>
     <footer>
         <p>Projekt WSB Merito Gdańsk 2025`</p>
